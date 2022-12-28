@@ -152,18 +152,159 @@ ul li a{
     color: #121212;
   }
 /* plans css End */
+
+
 /* Choose Your insurance section End */
 
 /* Our-advantages css start */
   .advantages{
     background: #000000;
-    padding: 0 100px;
+    padding: 80px 100px;
+  }
+  .advantages h1{
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 72px;
+    color: #FFFFFF;
+    padding-bottom: 40px;
+  }
+  .advantage-lists{
+    display: flex;
+    gap: 40px;
+    padding-bottom: 36px;
+  }
+  .advantage h3{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding: 8px 0;
+  }
+  .advantage img{
+    width: 32.06px;
+    height: 32.06px;
+  }
+  .advantage p{
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #9C9C9C;
   }
 /* Our-advantages css End */
 
+/* common questions css start */
+  .questions{
+    background: #F5F5F5;
+    color: #000000;
+    padding: 50px 100px;
+  }
+  .questions h1{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: #121212;
+    padding-bottom: 50px;
+  }
+  .que-ans1 p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #404040;
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-bottom: 40px;
+  }
+  .line{
+    width: 12px;
+    height: 8px;
+    background: #FFBB00;
+  }
+  .que-answer{
+    display: flex;
+    align-items: center;
+  }
+  .que-ans{
+    display: flex;
+    align-items: center;
+    padding-bottom: 34px;
+  }
+  .que-ans h4,.que-answer h4{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #121212;
+    padding-left: 8px;
+  }
+/* common questions css end */
 
 
-
+/* footer section css start */
+footer{
+  background-color: #000000;
+  padding: 105px 100px;
+}
+.line1,.line2{
+  width: 290px;
+  height: 2px;
+  background: #121212;
+}
+.footer-items{
+  display: flex;
+  gap: 200px;
+}
+.contact h2{
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.contact p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #B3B3B3;
+  padding: 10px;
+}
+.social-media{
+  padding-top: 15px;
+}
+.social-media img{
+  padding-left: 16px;
+}
+.information-list{
+  padding-top: 32px;
+}
+.address{
+  padding-top: 32px;
+}
+.information-list p a{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.015em;
+  color: #B3B3B3;
+  text-decoration: none;
+}
+footer h5{
+  padding-top: 50px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  color: #9C9C9C;
+}
+/* footer section css End */
 
 
 
@@ -203,10 +344,12 @@ ul li a{
  .menu-bar{
   display: block;
  } 
+
  nav ul{
   display: none;
  }
  .insurance h5{
+  padding: 0;
   text-align: center;
  }
  .insurance h1{
@@ -222,6 +365,15 @@ ul li a{
 @media screen and (max-width: 440px) {
  .plan{
   width: 100%;
+ }
+ .que-answer{
+  align-items: baseline;
+ }
+ .questions h1{
+  font-size: 36px;
+  padding: 0;
+  line-height: normal;
+  text-align: center;
  }
 }
 
@@ -255,5 +407,26 @@ ul li a{
   footer h5{
     text-align: center;
     padding: 0;
+  }
+  .advantages{
+    padding: 25px;
+  }
+  .advantages h1{
+    font-size: 32px;
+  }
+  .advantage-lists{
+    flex-direction: column;
+  }
+  .questions{
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width:1120px) {
+  .footer{
+    padding: 0;
+  }
+  .footer-items{
+    gap: 100px;
   }
 }
