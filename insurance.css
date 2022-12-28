@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+:root{
+  --display: flex;
+  --justify: center;
+  --align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  font-style: normal;
+  background: #F5F5F5;
+}
+button:hover{
+  background: linear-gradient(180deg, #ffffff 0%, #fffff9 100%)
+  !important;
+  cursor: pointer;
+}
+nav a:hover{
+  text-decoration: underline;
+  text-decoration-color: #F7F7F7;
+  text-decoration-thickness: 4px;
+  color: #ffd6d6;
+}
+span{
+  color: #FFBB00;
+}
+/* header part Start */
+
+header{
+  background: #000000;
+  padding: 0 100px;
+}
+nav{
+  height: 80px;
+  display: var(--display);
+  justify-content: space-between;
+  align-items: var(--align);
+}
+ul{
+  list-style: none;
+  display: var(--display);
+}
+ul li a{
+  text-decoration: none;
+  padding: 32px 35px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.menu-bar{
+  display: none;
+}
+/* navbar end */
+
+/* Choose Your insurance section Start */
+  .insurance{
+    padding: 30px 0;
+    background: #121212;
+  }
+  .insurance h5{
+    font-weight: 500;
+    padding-left: 100px;
+    font-size: 20px;
+    line-height: 22px;  
+    color: #B3B3B3;
+  }
+  .insurance h1{
+    padding-left: 100px;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 62px;
+    color: #FFFFFF;
+    padding-bottom: 25px;
+  }
+  /*  */
+
+  .plan{
+    width: 450px;
+    height: 500px;
+    background: #000000;
+    border-radius: 5px;
+    padding: 15px 0;
+  }
+  .name-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .name-price h3{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: #9C9C9C;
+  }
+  .name-price h2{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: #FFFFFF;
+  }
+  .name-price p{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9C9C9C;
+    text-align: end;
+  }
+  .features{
+    display: flex;
+    padding-bottom: 20px;
+    padding-left: 15px;
+  }
+  .features p{
+    padding-left: 8px;
+  }
+  .insurance button{
+    padding: 16px 32px;
+    background: #121212;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #CCCCCC;
+  }
+  .sign-up-btn{
+    padding-left: 30px;
+  }
+  .plans{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+.plan:hover
+{
+  cursor: pointer;
+}
+  .plan:hover h3{
+    color: #FFBB00;
+    cursor: pointer;
+  }
+  .plan:hover button{
+    background-color: #FFBB00;
+    color: #121212;
+  }
+/* plans css End */
+/* Choose Your insurance section End */
+
+/* Our-advantages css start */
+  .advantages{
+    background: #000000;
+    padding: 0 100px;
+  }
+/* Our-advantages css End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query start */
+
+/* 1024px */
+@media screen and (max-width: 1024px) {
+  header{
+    justify-content: var(--justify);
+    padding: 0 10px;
+  }
+}
+
+/* 768px */
+@media screen and (max-width: 768px) {
+ .menu-bar{
+  display: block;
+ } 
+ nav ul{
+  display: none;
+ }
+ .insurance h5{
+  text-align: center;
+ }
+ .insurance h1{
+  text-align: center;
+  padding: 25px;
+ }
+ .plans{
+  flex-direction: column;
+  align-items: center;
+ }
+}
+
+@media screen and (max-width: 440px) {
+ .plan{
+  width: 100%;
+ }
+}
+
+/* 992px */
+
+@media screen and (max-width: 992px) {
+  footer{
+    padding: 10px;
+  }
+  .footer-items{
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+  }
+  .footer-items h2{
+    text-align: center;
+  }
+  .address{
+    padding: 15px;
+    text-align: center;
+  }
+  .information-list{
+    padding: 15px;
+    text-align: center;
+  }
+  .social-media{
+    display: flex;
+    justify-content: center;
+  }
+  footer h5{
+    text-align: center;
+    padding: 0;
+  }
+}
