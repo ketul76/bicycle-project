@@ -65,7 +65,7 @@ ul li a{
         padding: 70px 100px;
         background: #121212;
         position: relative;
-        margin-bottom: 400px;
+        margin-bottom: 750px;
     }
     .title{
         background: #121212;
@@ -89,10 +89,11 @@ ul li a{
         position: absolute;
         top: 250px;
         display: flex;
+        justify-content: center;
       }
       .select-bike{
         width: 425px;
-        height: 540px;
+        height: 815px;
         background: #000000;
         border-radius: 5px 0px 0px 5px;
         padding-left: 35px;
@@ -100,8 +101,8 @@ ul li a{
       }
       .select-form{
         width: 650px;
-        height: 540px;
-        background: #ffffff;
+        height: 815px;
+        background: #FFFFFF;
         padding-left: 35px;
         padding-top: 50px;
       }
@@ -214,7 +215,7 @@ ul li a{
       .personal{
         display: flex;
         align-items: center;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
       }
       .personal h4{
         font-family: 'Roboto';
@@ -228,9 +229,136 @@ ul li a{
         padding-left: 8px;
       }
 
+      /* form */
+      form label{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #121212;
+        padding-bottom: 4px;
+      }
+      .first-row{
+        display: flex;
+        gap: 20px;
+        padding-bottom: 20px;
+      }
+      .first-row input{
+        width: 280px;
+        height: 48px;
+        background: #F7F7F7;
+        border: 1px solid #EDEDED;
+        border-radius: 5px;
+      }
+      .form-control input{
+        width: 580px;
+        height: 48px;
+        background: #F7F7F7;
+        border: 1px solid #EDEDED;
+        border-radius: 5px;
+        padding-bottom: 20px;
+      }
+      .personal1{
+        padding-top: 40px;
+      }
+      .checkbox{
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+      }
+      .checkbox input{
+        width: 32px;
+        height: 32px;
+        background: #F7F7F7;
+        border: 1px solid #CCCCCC;
+        border-radius: 5px;
+      }
+      .checkbox label{
+        padding-left: 10px;
+      }
+      .checkbox label a{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #121212;
+      }
+      .form-btn button{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #332200;
+        background: linear-gradient(180deg, #FFBB00 0%, #F2A60C 100%);
+        border-radius: 5px;
+        padding: 12px 24px;
+        border: none;
+      }
 /* select bike or insurance css End */
 
 
+/* footer section css start */
+footer{
+  background-color: #000000;
+  padding: 105px 100px;
+}
+.line1,.line2{
+  width: 290px;
+  height: 2px;
+  background: #121212;
+}
+.footer-items{
+  display: flex;
+  gap: 200px;
+}
+.contact h2{
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.contact p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #B3B3B3;
+  padding: 10px;
+}
+.social-media{
+  padding-top: 15px;
+}
+.social-media img{
+  padding-left: 16px;
+}
+.information-list{
+  padding-top: 32px;
+}
+.address{
+  padding-top: 32px;
+}
+.information-list p a{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.015em;
+  color: #B3B3B3;
+  text-decoration: none;
+}
+footer h5{
+  padding-top: 50px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  color: #9C9C9C;
+}
+/* footer section css End */
 
 
 
@@ -273,4 +401,106 @@ ul li a{
    nav ul{
     display: none;
    }
+}
+
+
+/* 1180px */
+
+@media screen and (max-width: 1180px) {
+  .select-bike-insurance{
+    padding: 15px;
+    position: static;
+    margin-bottom: 50px;
+  }
+  .selection{
+    position: static;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .select-bike{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .select-form{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+  }
+  .first-row input{
+    width: 100%;
+  }
+  .first-row{
+    flex-direction: column;
+  }
+  .form-control input{
+    width: 100%;
+  }
+  .title {
+    height: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+  .footer{
+    padding: 0;
+  }
+  .footer-items{
+    gap: 100px;
+  }
+}
+
+
+@media screen and (max-width: 440px) {
+  .select-btns{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+    height: 100%;
+  }
+  .list-img{
+    flex-direction: column;
+  }
+  .list img{
+    width: 100%;
+  }
+  .nimbus{
+    width: 160px;
+  }
+}
+
+
+/* 992px */
+
+@media screen and (max-width: 992px) {
+  footer{
+    padding: 10px;
+  }
+  .footer-items{
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+  }
+  .footer-items h2{
+    text-align: center;
+  }
+  .address{
+    padding: 15px;
+    text-align: center;
+  }
+  .information-list{
+    padding: 15px;
+    text-align: center;
+  }
+  .social-media{
+    display: flex;
+    justify-content: center;
+  }
+  footer h5{
+    text-align: center;
+    padding: 0;
+  }
 }

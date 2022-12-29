@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+:root{
+  --display: flex;
+  --justify: center;
+  --align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  font-style: normal;
+  background: #F5F5F5;
+}
+button:hover{
+  background: linear-gradient(180deg, #ffffff 0%, #fffff9 100%)
+  !important;
+  cursor: pointer;
+}
+nav a:hover{
+  text-decoration: underline;
+  text-decoration-color: #F7F7F7;
+  text-decoration-thickness: 4px;
+  color: #ffd6d6;
+}
+span{
+  color: #FFBB00;
+}
+/* header part Start */
+
+header{
+  background: #000000;
+  padding: 0 100px;
+}
+nav{
+  height: 80px;
+  display: var(--display);
+  justify-content: space-between;
+  align-items: var(--align);
+}
+ul{
+  list-style: none;
+  display: var(--display);
+}
+ul li a{
+  text-decoration: none;
+  padding: 32px 35px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.menu-bar{
+  display: none;
+}
+/* navbar end */
+
+/* terms css start */
+  .terms{
+    background: #121212;
+    padding: 20px 100px;
+  }
+  .terms h3{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #B3B3B3;
+  }
+  .terms h1{
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    color: #FFFFFF;
+  }
+/* terms css End */
+
+/* our policy css start */
+  .policy{
+    padding: 25px 100px;
+    background: #F5F5F5;
+  }
+  .policy h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #121212;
+    padding-bottom: 20px;
+  }
+  .policy p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #2E2E2E;
+  }
+  .que{
+    padding-bottom: 40px;
+  }
+
+/* our policy css End */
+
+/* footer section css start */
+footer{
+  background-color: #000000;
+  padding: 105px 100px;
+}
+.line1,.line2{
+  width: 290px;
+  height: 2px;
+  background: #121212;
+}
+.footer-items{
+  display: flex;
+  gap: 200px;
+}
+.contact h2{
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.contact p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #B3B3B3;
+  padding: 10px;
+}
+.social-media{
+  padding-top: 15px;
+}
+.social-media img{
+  padding-left: 16px;
+}
+.information-list{
+  padding-top: 32px;
+}
+.address{
+  padding-top: 32px;
+}
+.information-list p a{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.015em;
+  color: #B3B3B3;
+  text-decoration: none;
+}
+footer h5{
+  padding-top: 50px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.015em;
+  color: #9C9C9C;
+}
+/* footer section css End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query start */
+
+/* 1024px */
+@media screen and (max-width: 1024px) {
+  header{
+    justify-content: var(--justify);
+    padding: 0 10px;
+  }
+}
+
+
+/* 768px */
+@media screen and (max-width: 768px) {
+ .menu-bar{
+  display: block;
+ } 
+ nav ul{
+  display: none;
+ }
+ .terms{
+  padding: 0;
+  text-align: center;
+ }
+ .terms h1{
+  font-size: 42px;
+  line-height: normal;
+ }
+ .policy{
+  padding: 15px;
+ }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .footer{
+    padding: 0;
+  }
+  .footer-items{
+    gap: 100px;
+  }
+}
+
+/* 992px */
+
+@media screen and (max-width: 992px) {
+  footer{
+    padding: 10px;
+  }
+  .footer-items{
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+  }
+  .footer-items h2{
+    text-align: center;
+  }
+  .address{
+    padding: 15px;
+    text-align: center;
+  }
+  .information-list{
+    padding: 15px;
+    text-align: center;
+  }
+  .social-media{
+    display: flex;
+    justify-content: center;
+  }
+  footer h5{
+    text-align: center;
+    padding: 0;
+  }
+}
