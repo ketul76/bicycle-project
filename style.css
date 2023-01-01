@@ -356,6 +356,9 @@ padding-top: 30px;
   .features p{
     padding-left: 8px;
   }
+  .talk-btn{
+    padding-top: 87px;
+  }
   .our-plans button{
     padding: 16px 32px;
     background: #121212;
@@ -374,10 +377,12 @@ padding-top: 30px;
     justify-content: center;
     gap: 25px;
   }
-.plan:hover
-{
-  cursor: pointer;
-}
+  .plan:hover
+  {
+    cursor: pointer;
+    width: 500px;
+    height: 575px;  
+  }
   .plan:hover h3{
     color: #FFBB00;
     cursor: pointer;
