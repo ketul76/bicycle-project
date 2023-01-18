@@ -81,13 +81,30 @@ ul li a{
     padding-bottom: 25px;
   }
   /*  */
-
+  .plan:hover
+  {
+    cursor: pointer;
+    width: 500px;
+    height: 575px;  
+  }
+  .plan:hover h3{
+    color: #FFBB00;
+    cursor: pointer;
+  }
+  .plan:hover button{
+    background-color: #FFBB00;
+    color: #121212;
+  }
+  .talk-btn{
+    padding-top: 87px;
+  }
   .plan{
     width: 450px;
     height: 500px;
     background: #000000;
     border-radius: 5px;
     padding: 15px 0;
+    transition: 0.6s;
   }
   .name-price{
     display: flex;
